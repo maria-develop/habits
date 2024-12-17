@@ -4,9 +4,8 @@ from rest_framework.routers import SimpleRouter
 from rest_framework_simplejwt.views import (TokenObtainPairView,
                                             TokenRefreshView)
 
-from users.views import UserViewSet
 from users.apps import UsersConfig
-
+from users.views import UserViewSet
 
 app_name = UsersConfig.name
 

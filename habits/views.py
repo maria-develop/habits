@@ -1,12 +1,13 @@
-from rest_framework.permissions import AllowAny
 from rest_framework.generics import (CreateAPIView, DestroyAPIView,
                                      ListAPIView, RetrieveAPIView,
                                      UpdateAPIView)
+from rest_framework.permissions import AllowAny
+
+from users.permissions import IsOwner
 
 from .models import Habit
 from .paginations import CustomPageNumberPagination
 from .serializers import HabitSerializer
-from users.permissions import IsOwner
 
 
 class HabitCreateAPIView(CreateAPIView):

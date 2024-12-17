@@ -1,4 +1,3 @@
-from rest_framework.serializers import ValidationError
 from rest_framework import serializers
 
 

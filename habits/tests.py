@@ -1,11 +1,8 @@
 from django.urls import reverse
 from rest_framework import status
 from rest_framework.test import APITestCase
-from django.test import TestCase
-from unittest.mock import patch
 
 from habits.models import Habit
-from habits.tasks import send_habit_reminder
 from users.models import User
 
 
